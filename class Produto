@@ -1,0 +1,54 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Estoque
+{
+    class Produto
+    {
+        private string descricao;
+        private int qtdmin;
+        private int qtdtotal;
+
+
+
+        public void repor(int x)   {
+            int temp = x;
+            qtdtotal += temp;
+
+        }
+        public void retirar(int x)  {
+            int temp = x;
+            qtdtotal -= temp;
+            MessageBox.Show("Quantidade do produto abaixo do limite!");
+        }
+
+        public void cadastrar() {
+            descricao = textCadaDesc;
+            qtdmin = textCadaQtd;
+
+        }
+        public void cadastrar() {
+            descricao = textCadaDesc;
+            qtdmin = textCadaQtd;
+
+        }
+        public void buscar()
+        {
+         
+            descricao = textCadaDesc;
+            qtdmin = textCadaQtd;
+
+            if (qtdtotal < qtdmin)
+            {
+                MessageBox.Show("Quantidade do produto abaixo do limite!");
+            }
+
+        }
+
+    }
+
+    
+}
